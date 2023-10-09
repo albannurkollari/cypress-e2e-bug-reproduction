@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "Node",
+    "target": "ESNext", // Target ECMAScript 2019
+    "baseUrl": ".", // Root directory for TypeScript source files
+    "strict": true, // Enable strict type checking
+    "esModuleInterop": true, // Enable import/export interoperability
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true, // Enforce consistent file name casing
+    "resolveJsonModule": true, // Enable JSON module imports
+    "isolatedModules": true, // Ensure each file is a separate module
+    "types": ["cypress", "node"], // Include Cypress types
+    "typeRoots": ["node_modules/@types", "node_modules/cypress/types"]
+  },
+  "include": ["**/*.ts"], // Files to include for compilation
+  "exclude": ["node_modules"] // Files to exclude from compilation
+}

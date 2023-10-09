@@ -1,0 +1,19 @@
+# Libs
+node_modules/
+
+# Cypress output
+cypress/screenshots/
+cypress/videos/
+cypress/downloads/
+
+# IDE
+.vscode/
+
+#env file
+/.env*
+
+# presets
+presets.json
+
+# OS
+.DS_Store

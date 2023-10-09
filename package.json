@@ -1,0 +1,32 @@
+{
+  "name": "cypress-e2e-bug-reproduction",
+  "version": "0.0.1",
+  "description": "A repo that isolates issues in order to demonstrate them as best as possible, in Cypress.",
+  "main": "index.js",
+  "scripts": {
+    "cy:debug:run": "set DEBUG=cypress:* && 1> cypress/logs/stdout.txt 2> cypress/logs/logs.txt npm run cy:run",
+    "cy:info": "cypress info",
+    "cy:open": "cypress open -b chrome --e2e",
+    "cy:run": "cypress run -b chrome --e2e",
+    "format": "prettier --write"
+  },
+  "keywords": [
+    "testing",
+    "E2E",
+    "BDD",
+    "TDD",
+    "Cypress",
+    "TypeScript"
+  ],
+  "author": "Alban Nurkollari",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Erenndriel/cypress-e2e-bug-reproduction.git"
+  },
+  "devDependencies": {
+    "cypress": "^13.3.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  }
+}
