@@ -1,0 +1,80 @@
+
+> cypress-e2e-bug-reproduction@0.0.1 cy:run
+> cypress run -b chrome --e2e cypress/e2e/visit-url.spec.ts
+
+
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        13.3.0                                                                         │
+  │ Browser:        Chrome 117 (headless)                                                          │
+  │ Node Version:   v20.5.1 (C:\Program Files\nodejs\node.exe)                                     │
+  │ Specs:          1 found (visit-url.spec.ts)                                                    │
+  │ Searched:       ./**/*.spec.{js,jsx,ts,tsx}                                                    │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  visit-url.spec.ts                                                               (1 of 1)
+
+
+  Visit an Elkjop URL
+    √ should visit this base URL (1659ms)
+    √ should visit this specific URL (663ms)
+    1) should visit this other specific URL
+
+
+  2 passing (6s)
+  1 failing
+
+  1) Visit an Elkjop URL
+       should visit this other specific URL:
+
+      AssertionError: Expected URL to be "https://www.elkjop.no/hvitevarer/vask-og-tork/kombinert-vaskemaskin-og-torketrommel" but received "https://www.elkjop.no/" instead!: expected 'https://www.elkjop.no/' to equal 'https://www.elkjop.no/hvitevarer/vask-og-tork/kombinert-vaskemaskin-og-torketrommel'
+      + expected - actual
+
+      -'https://www.elkjop.no/'
+      +'https://www.elkjop.no/hvitevarer/vask-og-tork/kombinert-vaskemaskin-og-torketrommel'
+      
+  
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        3                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      1                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  1                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     5 seconds                                                                        │
+  │ Spec Ran:     visit-url.spec.ts                                                                │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  E:\Documents\My Programming\Web\Projects\elkjop\cypress-e2e-bug-reproduction\cyp     (1264x581)
+     ress\screenshots\visit-url.spec.ts\Visit an Elkjop URL -- should visit this othe               
+     r specific URL (failed).png                                                                    
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ✖  visit-url.spec.ts                        00:05        3        2        1        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ✖  1 of 1 failed (100%)                     00:05        3        2        1        -        -  
+
